@@ -1,0 +1,130 @@
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} 
+\usepackage{linespacing_fix}
+\usepackage{cite}
+\begin{document}
+\pagenumbering{gobble}
+
+
+%***"%"后面的所有内容是注释而非代码，不会输出到最后的PDF中
+%***使用本模板，只需要参照输出的PDF，在本文档的相应位置做简单替换即可
+%***修改之后，输出更新后的PDF，只需要点击Overleaf中的“Recompile”按钮即可
+
+
+%**********************************姓名********************************************
+\name{任世伟}
+
+
+%**********************************联系信息****************************************
+%第一个括号里写手机号，第二个写邮箱
+% \contactInfo{1234567890}{rsw1835@email.com}
+\otherInfo{手机：1234567890}{邮箱：rsw1835@email.com}{}{}
+
+
+%**********************************其他信息****************************************
+%在大括号内填写其他信息，最多填写4个，但是如果选择不填信息，
+%那么大括号必须空着不写，而不能删除大括号。
+%\otherInfo后面的四个大括号里的所有信息都会在一行输出
+%如果想要写两行，那就用两次这个指令（\otherInfo{}{}{}{}）即可
+\otherInfo{性别：男}{民族：汉}{出生年月：1993.11}{}
+\otherInfo{籍贯：河北省石家庄市}{}{}{}
+
+
+%*********************************照片**********************************************
+%照片需要放到images文件夹下，名字必须是you.jpg，如果不需要照片可以不添加此行命令
+%0.15的意思是，照片的宽度是页面宽度的0.15倍，调整大小，避免遮挡文字
+\yourphoto{0.15}
+
+
+%**********************************正文**********************************************
+%***大标题，下面有横线做分割
+%***一般的标题有：教育背景，实习（项目）经历，工作经历，自我评价，求职意向，等等
+\section{教育经历}
+
+
+%***********一行子标题**************
+%***第一个大括号里的内容向左对齐，第二个大括号里的内容向右对齐
+%***\textbf{}括号里的字是粗体，\textit{}括号里的字是斜体
+\datedsubsection{\textbf{上海交通大学} \qquad 计算机技术 \qquad\qquad \textit{硕士}}{2019.09 - 至今}
+
+
+%***********列举*********************
+%***可添加多个\item，得到多个列举项，类似的也可以用\textbf{}、\textit{}做强调
+\begin{itemize}[parsep=1ex]
+  \item \textbf{主要课程}：算法设计与分析、高级数据库技术、区块链技术、计算机网络、人工智能、数字图像处理、计算机安全学、数据分析
+\end{itemize}
+
+\datedsubsection{\textbf{华南理工大学} \qquad 热能与动力工程 \qquad \textit{本科}}{2012.09 - 2016.06}
+\begin{itemize}[parsep=1ex]
+  \item \textbf{主要课程}：高等数学、线性代数与解析几何、概率论与数理统计、大学计算机基础、C++程序设计
+\end{itemize}
+
+\section{技能专长}
+
+\begin{itemize}[parsep=1ex]
+  \item \textbf{语言}：Python、R、C/C++、Java、SQL
+  \item \textbf{项目/框架}：NumPy、pandas、PyTorch、TensorFlow
+\end{itemize}
+
+\section{项目经历}
+
+\datedsubsection{\textbf{在线故障预测与智能调度}}{2020.01 - 至今}
+\begin{itemize}[parsep=1ex]
+  \item \textbf{项目描述}：在大规模集群中进行实时异常检测，根据异常检测结果和迁移代价分析，做出负载均衡调度。
+  \item \textbf{职责/工作}：
+    \begin{itemize}[parsep=0.5ex]
+      \item 构建基于深度学习的增量异常检测模型;
+      \item 构建基于深度学习的指标预测模型；
+      \item 结合异常检测模型和指标预测模型，提高异常检测的准确性和实时性。
+    \end{itemize}
+\end{itemize}
+
+\datedsubsection{\textbf{Style transfer based on Deep Learning}}{2019.10 - 2019.12}
+\begin{itemize}[parsep=1ex]
+  \item \textbf{项目描述}：利用深度学习算法学习著名画作的风格，然后再把这种风格应用到其他图片上。
+  \item \textbf{职责/工作}:
+    \begin{itemize}[parsep=0.5ex]
+      \item 使用TensorFlow框架定义图像生成网络、内容损失和风格损失;
+      \item 结合预训练好的损失网络VGGNet，训练图像生成网络。
+    \end{itemize}
+\end{itemize}
+
+\datedsubsection{\textbf{软件开发投入工作量分析}}{2019.10 - 2019.11}
+\begin{itemize}[parsep=1ex]
+  \item \textbf{项目描述}：对软件开发项目数据进行统计分析，得到项目开发时间关于其它影响因素的模型。
+  \item \textbf{职责/工作}：
+    \begin{itemize}[parsep=0.5ex]
+      \item 对软件开发项目数据进行处理;
+      \item 分析类别变量的不同水平对项目开发时间的影响（方差分析）。
+    \end{itemize}
+\end{itemize}
+
+\datedsubsection{\textbf{可编程传输路径}}{2019.09 - 2019.10}
+\begin{itemize}[parsep=1ex]
+  \item \textbf{项目描述}：在移动性管理（Mobile Management）中对转发路径进行编程，在配置信息更少、信令开销更小的情况下灵活地切换路径，为各种网络服务的应用提供保证。
+  \item \textbf{职责/工作}：
+    \begin{itemize}[parsep=0.5ex]
+      \item 用户面信令（GTP-U）扩展、时延抖动分析。
+    \end{itemize}
+\end{itemize}
+
+\section{个人特质}
+
+\begin{itemize}[parsep=1ex]
+  \item{热爱编程，熟练掌握Python、R，了解C/C++、Java、SQL；}
+  \item{有很强的进取心，对新事物充满好奇，熟练掌握PyTorch、TensorFlow等深度学习框架；}
+  \item{熟悉基本的数据结构和算法，希望能在互联网行业有所成就。}
+\end{itemize}
+
+% \section{简历写作注意事项}
+
+% 写作时不要泛泛而谈太笼统，要应用STAR原则，即Situation（情景）、Task（任务）、Action（行动）和Result（结果）四个英文单词的首字母组合。
+
+% \begin{itemize}[parsep=1ex]
+%   \item S指的是situation，事情是在什么情况下发生
+%   \item T指的是task，你是如何明确你的目标的
+%   \item A指的是action，针对这样的情况分析，你采用了什么行动方式
+%   \item R指的是result，结果怎样，在这样的情况下你学习到了什么
+% \end{itemize}
+
+\end{document}
